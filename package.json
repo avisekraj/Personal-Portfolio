@@ -1,0 +1,19 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devil": "nodemon src/app.js -e js,html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "html": "^1.0.0",
+    "mongoose": "^6.3.5",
+    "nodemon": "^2.0.16"
+  }
+}
