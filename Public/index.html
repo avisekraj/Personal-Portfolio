@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Responsive Personal Portfolio Website Design</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="css/theme.css" />
+    <!-- aos css link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="css/style1.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <a href="#home" class="logo">Portfolio</a>
+
+      <nav class="navbar">
+        <a href="#home" class="active">home</a>
+        <a href="#about">about</a>
+        <a href="#skill">skills</a>
+        <a href="#education">Education</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="follow">
+        <a
+          href="https://www.facebook.com/profile.php?id=100060103760772"
+          target="_blank"
+          class="fab fa-facebook-f"
+        ></a>
+        <a href="" target="_blank" class="fab fa-twitter"></a>
+        <a
+          href="https://www.instagram.com/devil_.001_/"
+          target="_blank"
+          class="fab fa-instagram"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/abhishek-raj-3a548a227/"
+          target="_blank"
+          class="fab fa-linkedin"
+        ></a>
+        <a
+          href="https://github.com/avisekraj"
+          target="_blank"
+          class="fab fa-github"
+        ></a>
+      </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="image" data-aos="fade-right">
+        <img src="images/user-img.jpg" alt="" />
+      </div>
+
+      <div class="content">
+        <div class="theme" data-aos="fade-left" onclick="myFunction()">
+          <i class="bx bx-sun" id="menu-icon"></i>
+        </div>
+        <script>
+          function myFunction() {
+            const element = document.getElementById("menu-icon");
+            if (element.className == "bx bx-sun") {
+              element.className = "bx bx-moon";
+              var r = document.querySelector(":root");
+              r.style.setProperty("--black", "white");
+              r.style.setProperty("--white", "black");
+            } else {
+              element.className = "bx bx-sun";
+              var r = document.querySelector(":root");
+              r.style.setProperty("--black", "black");
+              r.style.setProperty("--white", "white");
+            }
+          }
+
+          function myFunction_set() {
+            var bk = getComputedStyle(r).getPropertyValue("--black");
+            var we = getComputedStyle(r).getPropertyValue("--white");
+            if (bk == "#000") {
+            }
+          }
+        </script>
+        <h3 class="text" data-aos="fade-up">hi, i am Abhishek Raj</h3>
+        <span data-aos="fade-up">web designer & developer</span>
+        <p data-aos="fade-up" class="text">
+          High level exprience in Photography and frontend Development
+          knowledge.Producing quality work.
+        </p>
+        <a data-aos="fade-up" href="#" class="btn text">Hire me</a>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <h1 class="heading text" data-aos="fade-up"><span>About</span></h1>
+
+      <div class="biography">
+        <p data-aos="fade-up" class="text">
+          Hi, I'm Abhishek Raj. Nice to meet you. I'm from Bihar,India. I love
+          creating webpages. I love playing Cricket, Chess and mobile games.
+        </p>
+
+        <div class="bio">
+          <h3 data-aos="zoom-in"><span>name : </span> Abhishek Raj</h3>
+          <h3 data-aos="zoom-in"><span>email : </span> araj14250@gmail.com</h3>
+          <h3 data-aos="zoom-in"><span>address : </span> bihar, india</h3>
+          <h3 data-aos="zoom-in"><span>phone : </span> +123-456-7890</h3>
+          <h3 data-aos="zoom-in"><span>age : </span> 18 years</h3>
+          <h3 data-aos="zoom-in"><span>experience : </span> 1+ years</h3>
+        </div>
+
+        <a
+          href="https://drive.google.com/file/d/1uQH_Ng20WMbsOF76KUiLy0-KgsZk20nm/view?usp=sharing"
+          target="_blank"
+          class="btn"
+          data-aos="fade-up"
+          >download CV</a
+        >
+      </div>
+    </section>
+
+    <!-- about section ends -->
+    <!-- skill section starts -->
+    <section class="skill" id="skill">
+      <div class="skills" data-aos="fade-up">
+        <h1 class="heading"><span>skills</span></h1>
+
+        <div class="progress">
+          <div class="bar" data-aos="fade-left">
+            <h3><span>HTML</span> <span>95%</span></h3>
+          </div>
+          <div class="bar" data-aos="fade-right">
+            <h3><span>CSS</span> <span>90%</span></h3>
+          </div>
+          <div class="bar" data-aos="fade-left">
+            <h3><span>JavaScript</span> <span>50%</span></h3>
+          </div>
+          <div class="bar" data-aos="fade-right">
+            <h3><span>PHP</span> <span>70%</span></h3>
+          </div>
+          <div class="bar" data-aos="fade-left">
+            <h3><span>NodeJS</span> <span>30%</span></h3>
+          </div>
+          <div class="bar" data-aos="fade-right">
+            <h3><span>MongoDB</span> <span>30%</span></h3>
+          </div>
+          <div class="bar" data-aos="fade-left">
+            <h3><span>jQuery</span> <span>60%</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section ends -->
+
+    <!-- education section starts -->
+    <section class="education" id="education">
+      <div class="edu-exp">
+        <h1 class="heading" data-aos="fade-up">
+          <span>education</span>
+        </h1>
+
+        <div class="row">
+          <div class="box-container" id="education">
+            <h3 class="title" data-aos="fade-right">education</h3>
+            <div class="container">
+              <div class="timeline">
+                <ul>
+                  <li>
+                    <div class="timeline-content">
+                      <h3 class="date" data-aos="fade-up">2019-2020</h3>
+                      <h1 data-aos="fade-right">Web Designer</h1>
+                      <p data-aos="fade-right">
+                        I'm not pro in web designing but my all projects are
+                        designed by me.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-content">
+                      <h3 class="date" data-aos="fade-up">2020-2021</h3>
+                      <h1 data-aos="fade-left">Web developer</h1>
+                      <p data-aos="fade-left">
+                        I started Developing webpages from class 7th but i was
+                        not knowing about js nodejs and so on that time which i
+                        studied during this period.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-content">
+                      <h3 class="date" data-aos="fade-up">2021-2022</h3>
+                      <h1 data-aos="fade-right">Programming</h1>
+                      <p data-aos="fade-right">Its going on. Still studing</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- education section ends -->
+    <!-- portfolio section starts  -->
+<!-- C:\Program Files\MongoDB\Server\5.0\data\
+C:\Program Files\MongoDB\Server\5.0\log\ -->
+    <section class="portfolio" id="project">
+      <h1 class="heading" data-aos="fade-up"><span>projects</span></h1>
+
+      <div class="box-container">
+        <div class="box" data-aos="zoom-in">
+          <img src="images/img-1.jpg" alt="" />
+          <h3>
+            <a
+              href="https://github.com/avisekraj/Real-Estate-Mini-Project"
+              target="_blank"
+              >weather App
+            </a>
+          </h3>
+          <span>HTML,CSS,JS,API</span>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+          <img src="images/img-2.jpg" alt="" />
+          <h3>
+            <a href="https://github.com/avisekraj/Weather-app" target="_blank"
+              >Qutes Generator</a
+            >
+          </h3>
+          <span>HTML,CSS,JS,API</span>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+          <img src="images/img-3.jpg" alt="" />
+          <h3>
+            <a
+              href="https://github.com/avisekraj/Real-Estate-Mini-Project"
+              target="_blank"
+              >Real Estate Broker</a
+            >
+          </h3>
+          <span>HTML,CSS,JS,NodeJS,ExpressJS,MongoDB</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+      <h1 class="heading" data-aos="fade-up"><span>contact me</span></h1>
+
+      <form action="/contact" method="post">
+        <div class="flex">
+          <input
+            data-aos="fade-right"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            class="box"
+            required
+          />
+          <input
+            data-aos="fade-left"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            class="box"
+            required
+          />
+        </div>
+        <input
+          data-aos="fade-up"
+          type="number"
+          min="0"
+          name="number"
+          placeholder="Enter your number"
+          class="box"
+          required
+        />
+        <textarea
+          data-aos="fade-up"
+          name="message"
+          class="box"
+          required
+          placeholder="Enter your message"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input
+          type="submit"
+          data-aos="zoom-in"
+          value="Send message"
+          name="send"
+          class="btn"
+        />
+      </form>
+
+      <div class="box-container">
+        <div class="box" data-aos="zoom-in">
+          <i class="fas fa-phone"></i>
+          <h3>phone</h3>
+          <p>+123-456-7890</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+          <i class="fas fa-envelope"></i>
+          <h3>email</h3>
+          <p>araj14250@gmail.com</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>address</h3>
+          <p>bihar, india - 841301</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section ends -->
+
+    <div class="credit">
+      <div class="icon">
+        <a
+          href="https://www.facebook.com/profile.php?id=100060103760772"
+          target="_blank"
+          class="fab fa-facebook-f"
+        ></a>
+        <a href="#" target="_blank" class="fab fa-twitter"></a>
+        <a
+          href="https://www.instagram.com/devil_.001_/"
+          target="_blank"
+          class="fab fa-instagram"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/abhishek-raj-3a548a227/"
+          target="_blank"
+          class="fab fa-linkedin"
+        ></a>
+        <a
+          href="https://github.com/avisekraj"
+          target="_blank"
+          class="fab fa-github"
+        ></a>
+      </div>
+    </div>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+    <!-- aos js link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        delay: 300,
+      });
+    </script>
+  </body>
+</html>
