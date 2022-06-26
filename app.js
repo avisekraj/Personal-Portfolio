@@ -27,7 +27,7 @@ app.get("/submit", (req, res) => {
 
 // create a new user in our database
 
-app.post("/contact", async(req, res) => {
+app.post("/", async(req, res) => {
     try {
         const sendmsg = new Massage({
             name: req.body.name,
@@ -36,7 +36,7 @@ app.post("/contact", async(req, res) => {
             message: req.body.message
         })
         const getting = await sendmsg.save();
-        res.redirect("index");
+        res.render("index");
     } catch (error) {
         res.status(400).send("your error", error);
     }
