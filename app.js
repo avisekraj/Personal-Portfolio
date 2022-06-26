@@ -36,7 +36,7 @@ app.post("/contact", async(req, res) => {
             message: req.body.message
         })
         const getting = await sendmsg.save();
-        res.redirect("index.html");
+        res.redirect("index");
     } catch (error) {
         res.status(400).send("your error", error);
     }
