@@ -14,11 +14,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(static_path));
 
 
+app.set("view engine", "ejs")
 
 
 //
 app.get("/", (req, res) => {
-    res.render('/index.html');
+    res.render('index.ejs');
 });
 app.get("/submit", (req, res) => {
     res.render('/submit');
