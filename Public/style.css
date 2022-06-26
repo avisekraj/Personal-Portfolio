@@ -623,5 +623,9 @@ input{
    .contact form .flex .box{
       width: 100%;
    }
+   .home .content{
+      width: 300px;
+      height: auto;
+   }
 
 }
