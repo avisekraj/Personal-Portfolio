@@ -294,40 +294,45 @@ C:\Program Files\MongoDB\Server\5.0\log\ -->
     <section class="contact" id="contact">
       <h1 class="heading" data-aos="fade-up"><span>contact me</span></h1>
 
-      <form action="/" method="post">
+      <form action="/" method="post" onsubmit="return validation()">
+        <span id="error"></span>
         <div class="flex">
+          
           <input
             data-aos="fade-right"
             type="text"
             name="name"
+            id="user"
             placeholder="Enter your name"
             class="box"
-            required
+            
           />
           <input
             data-aos="fade-left"
             type="email"
             name="email"
+            id="mail"
             placeholder="Enter your email"
             class="box"
-            required
+            
           />
         </div>
         <input
           data-aos="fade-up"
           type="number"
-          min="0"
           name="number"
+          id="num"
           placeholder="Enter your number"
           class="box"
           pattern="[6-9]{1}[0-9]{9}"
-          required
+          
         />
         <textarea
           data-aos="fade-up"
           name="message"
           class="box"
-          required
+          
+          id="msg"
           placeholder="Enter your message"
           cols="30"
           rows="10"
@@ -340,6 +345,38 @@ C:\Program Files\MongoDB\Server\5.0\log\ -->
           class="btn"
         />
       </form>
+      <script>
+        function validation(){
+          var user=document.getElementById('user').value;
+          var mail=document.getElementById('mail').value;
+          var num=document.getElementById('num').value;
+          var msg=document.getElementById('msg').value;
+
+          if(user==""||mail==""||num==""||msg==""){
+            document.getElementById('error').innerHTML="** Please fill the empyty feild **";
+            return false;
+          }
+          if((user.length<=1)||(user.length>25)){
+            document.getElementById('error').innerHTML="** Name length Should between 2-25 **";
+            return false;
+          }
+          if(num.length!=10){
+            document.getElementById('error').innerHTML="** Mobile Number must be 10 digits only **";
+            return false;
+          }
+          if(mail.indexOf('@') <= 0 ){
+				document.getElementById('error').innerHTML =" ** @ Invalid Position";
+				return false;
+			}
+
+			if((mail.charAt(mail.length-4)!='.') && (mail.charAt(mail.length-3)!='.')){
+				document.getElementById('error').innerHTML =" ** . Invalid Position";
+				return false;
+			}
+
+        }
+
+      </script>
 
       <div class="box-container">
         <div class="box" data-aos="zoom-in">
