@@ -8,17 +8,18 @@ const Massage = require("./models/contact");
 // middleware static 
 
 const port = process.env.PORT || 3000;
+// const static_path = path.join(__dirname, "./public");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use('/css',express.static(__dirname+'public/css'))
-app.use('/js',express.static(__dirname+'public/js'))
+// app.use(express.static(static_path));
 
+app.use('/Public',express.static('Public'))
 app.set("view engine", "ejs")
 
 
 //
 app.get("/", (req, res) => {
-    res.render('index.ejs');
+    res.render('index');
 });
 app.get("/submit", (req, res) => {
     res.render('/submit');
