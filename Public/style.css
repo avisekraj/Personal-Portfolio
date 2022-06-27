@@ -197,14 +197,14 @@ section {
   border-radius: 50%;
   cursor: pointer;
   margin-left: 65rem;
-}
+} 
 .home .theme .bx {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-items: center;
   font-size: 3rem;
-}
+} 
 .home .image {
   flex: 1 1 40rem;
 }
@@ -553,7 +553,7 @@ input {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .timeline:before {
     content: "";
     position: absolute;
@@ -605,6 +605,22 @@ input {
   .timeline ul li:hover::before {
     background-color: aqua;
   }
+  .home .content{
+   width: 650px;
+   height: auto;
+  }
+  
+}
+@media (max-width:768px) {
+   .home .theme{
+      width: 600px;
+      display: grid;
+      justify-content: center;
+      height: auto;
+      margin-left: 100px;
+      left: 0;
+     }
+   
 }
 
 @media (max-width: 450px) {
@@ -639,5 +655,13 @@ input {
   .home .content {
     width: 300px;
     height: auto;
+  }
+  .home .theme{
+   width: 300px;
+   display: grid;
+   justify-content: center;
+   height: auto;
+   margin-left: 0;
+   left: 0;
   }
 }

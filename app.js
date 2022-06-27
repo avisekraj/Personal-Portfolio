@@ -19,7 +19,7 @@ app.set("view engine", "ejs")
 
 //
 app.get("/", (req, res) => {
-    res.render('index');
+    res.render('index',{sucess:''});
 });
 app.get("/submit", (req, res) => {
     res.render('/submit');
@@ -36,7 +36,7 @@ app.post("/", async(req, res) => {
             message: req.body.message
         })
         const getting = await sendmsg.save();
-        res.render("index");
+        res.render("index",{sucess:'I will cont'});
     } catch (error) {
         res.status(400).send("your error", error);
     }
