@@ -665,3 +665,20 @@ input {
    left: 0;
   }
 }
+
+.blur-text {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+/* Reveal on hover (desktop) */
+.blur-text:hover {
+  filter: blur(0);
+}
+
+/* On mobile (no hover), keep visible */
+@media (hover: none) {
+  .blur-text {
+    filter: blur(0);
+  }
+}
